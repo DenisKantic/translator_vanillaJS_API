@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Gantari:wght@300&family=Poppins:ital,wght@0,300;0,400;1,200&family=Roboto:wght@100;400&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gantari", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -9,13 +13,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6e3ef5;
+  background-color: #5372f0;
 }
 
 .container {
   height: 500px;
   width: 800px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #ffffff;
   padding: 30px;
 }
@@ -23,8 +27,8 @@ body {
 .center-part {
   margin: auto;
   width: 100%;
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 1px solid #c3c1cb;
+  border-radius: 5px;
 }
 
 .control-area {
@@ -37,12 +41,12 @@ body {
 
 i {
   font-size: 1.2em;
-  color: gray;
+  color: #adadad;
 }
 
 .fa-volume-high,
 .fa-copy {
-  padding: 15px;
+  padding: 10px;
 }
 
 #text-area-left,
@@ -52,37 +56,58 @@ i {
   resize: none;
   outline: none;
   border: none;
-  border-bottom: 1px solid black;
-  padding: 10px;
-  font-size: 1.5em;
+  border-bottom: 1px solid #c3c1cb;
+  font-size: 1.3em;
   background: none;
+  padding: 10px;
+  color: black;
+}
+
+textarea::placeholder {
+  color: #c3c1cb;
+}
+
+.left-row {
+  margin-left: 15px;
+}
+
+.right-row {
+  margin-right: 15px;
 }
 
 #text-area-right {
   margin-left: -4px;
-  border-left: 1px solid black;
+  border-left: 1px solid #c3c1cb;
 }
 
 .left-select,
 .right-select {
-  font-size: 1.4em;
+  font-size: 1.3em;
   background: none;
   outline: none;
-  width: 140px;
+  width: 150px;
   cursor: pointer;
   border: none;
-  margin: 50px;
+  text-align: start;
+}
+
+.left-select {
+  margin-left: 40px;
+}
+
+.right-select {
+  margin-right: 40px;
 }
 
 .button-translate {
   width: 100%;
   margin-top: 30px;
-  height: 50px;
+  height: 60px;
   border-radius: 5px;
   outline: none;
   border: none;
-  font-size: 1.5em;
+  font-size: 1.3em;
   cursor: pointer;
-  background-color: #6e3ef5;
+  background-color: #5372f0;
   color: #ffffff;
 }
