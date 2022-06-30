@@ -20,19 +20,19 @@
         <div class="text-area">
           <textarea
             name="#"
-            id="text-area"
+            id="text-area-left"
             cols="30"
             rows="10"
             readonly
-            disabled
+            placeholder="Enter text"
           ></textarea>
           <textarea
             name="#"
-            id="text-area"
+            id="text-area-right"
             cols="30"
             rows="10"
             readonly
-            disabled
+            placeholder="Translation"
           ></textarea>
         </div>
 
@@ -40,7 +40,8 @@
           <div class="left-row">
             <i class="fa-solid fa-volume-high"></i>
             <i class="fa-solid fa-copy"></i>
-            <select>
+            <i class="fa-solid fa-pipe"></i>
+            <select class="left-select">
               <option value="#">Test</option>
               <option value="#">Test2</option>
               <option value="#">Test3</option>
@@ -50,7 +51,7 @@
           <i class="fa-solid fa-arrow-right-arrow-left"></i>
 
           <div class="right-row">
-            <select>
+            <select class="right-select">
               <option value="#">Test</option>
               <option value="#">Test2</option>
               <option value="#">Test3</option>
@@ -59,9 +60,8 @@
             <i class="fa-solid fa-copy"></i>
           </div>
         </div>
-
-        <div class="button translate-btn">Translate</div>
       </div>
+      <button class="button-translate">Translate</button>
     </div>
   </body>
 </html>
