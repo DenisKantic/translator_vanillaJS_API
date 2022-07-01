@@ -111,3 +111,9 @@ textarea::placeholder {
   background-color: #5372f0;
   color: #ffffff;
 }
+
+.error {
+  color: red;
+  text-transform: uppercase;
+  text-align: center;
+}
