@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="script.js" defer></script>
-    <title>Translator</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="center-part">
-        <div class="text-area">
-          <textarea
-            name="#"
-            id="text-area-left"
-            placeholder="Enter text"
-          ></textarea>
-          <textarea
-            name="#"
-            id="text-area-right"
-            readonly
-            disabled
-            placeholder="Translation"
-          ></textarea>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<script src="script.js" type="module" defer></script>
+		<title>Translator</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="error"></div>
+			<div class="center-part">
+				<div class="text-area">
+					<textarea
+						name="#"
+						id="text-area-left"
+						placeholder="Enter text"
+						class="translateSearch"
+						required
+					></textarea>
+					<textarea
+						name="#"
+						id="text-area-right"
+						readonly
+						disabled
+						placeholder="Translation"
+						class="translateResult"
+						required
+					></textarea>
+				</div>
 
-        <div class="control-area">
-          <div class="left-row">
-            <i class="fa-solid fa-volume-high"></i>
-            <i class="fa-solid fa-copy"></i>
-            <i class="fa-solid fa-pipe"></i>
-            <select class="left-select">
-              <option value="#">English</option>
-              <option value="#">Test2</option>
-              <option value="#">Test3</option>
-            </select>
-          </div>
+				<div class="control-area">
+					<div class="left-row">
+						<i class="fa-solid fa-volume-high"></i>
+						<i class="fa-solid fa-copy"></i>
+						<i class="fa-solid fa-pipe"></i>
+						<select class="left-select translateFrom"></select>
+					</div>
 
-          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+					<i class="fa-solid fa-arrow-right-arrow-left"></i>
 
-          <div class="right-row">
-            <select class="right-select">
-              <option value="#">Bosnian</option>
-              <option value="#">Test2</option>
-              <option value="#">Test3</option>
-            </select>
-            <i class="fa-solid fa-volume-high"></i>
-            <i class="fa-solid fa-copy"></i>
-          </div>
-        </div>
-      </div>
-      <button class="button-translate">Translate Text</button>
-    </div>
-  </body>
+					<div class="right-row">
+						<select class="right-select translateTo"></select>
+						<i class="fa-solid fa-volume-high"></i>
+						<i class="fa-solid fa-copy"></i>
+					</div>
+				</div>
+			</div>
+			<button class="button-translate">Translate Text</button>
+		</div>
+	</body>
 </html>
